@@ -1,0 +1,30 @@
+{
+  "name": "proteus-cluster",
+  "version": "1.1.4",
+  "scripts": {
+    "start": "node app",
+    "test": "XUNIT_FILE=test-report.xml node_modules/.bin/mocha --reporter xunit-file",
+    "cobertura": "node_modules/.bin/istanbul cover --report cobertura node_modules/mocha/bin/_mocha -- --reporter dot",
+    "cover": "node_modules/.bin/istanbul cover --print none --report html node_modules/mocha/bin/_mocha && open coverage/index.html",
+    "checkstyle": "jshint --checkstyle-reporter . > checkstyle-jshint.xml || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ameba-proteus/proteus-cluster.git"
+  },
+  "homepage": "https://github.com/ameba-proteus/proteus-cluster",
+  "dependencies": {
+    "proteus-logger": "<2.0.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.0",
+    "istanbul": "^0.1.45",
+    "mocha": "*",
+    "should": "*",
+    "xunit-file": "^0.0.5"
+  }
+
+,"_resolved": "https://registry.npmjs.org/proteus-cluster/-/proteus-cluster-1.1.4.tgz"
+,"_integrity": "sha1-aCSGpCn72e/eGLUueZ3sGBZEL+4="
+,"_from": "proteus-cluster@1.1.4"
+}
