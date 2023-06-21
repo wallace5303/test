@@ -226,14 +226,6 @@ func Super2(s *Saiyan) {
 	fmt.Println("s: ", s)
 }
 
-func modify2(x *int) {
-	//*x = 100
-	fmt.Println("x: ", x)
-	fmt.Println("*x: ", *x)
-	fmt.Println("&x: ", &x)
-	*x = 100
-}
-
 func Os() string {
 	fmt.Println("DevNull：", os.DevNull)
 	fmt.Println("Args: ", os.Args)
