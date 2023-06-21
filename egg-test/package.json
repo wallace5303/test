@@ -1,0 +1,66 @@
+{
+  "name": "egg-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "commander": "^5.0.0",
+    "debug": "^4.3.3",
+    "egg": "^2.15.1",
+    "egg-cors": "^2.2.0",
+    "egg-jwt": "^3.1.6",
+    "egg-mysql": "^3.0.0",
+    "egg-redis": "^2.3.0",
+    "egg-scripts": "^2.11.0",
+    "egg-validate": "^2.0.2",
+    "egg-xc-redis": "^1.1.6",
+    "locutus": "^2.0.11",
+    "lodash": "^4.17.11",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1",
+    "urlencode": "^1.1.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.1.0",
+    "egg-bin": "^4.12.3",
+    "egg-ci": "^1.11.0",
+    "egg-mock": "^3.21.0",
+    "eslint": "^5.13.0",
+    "mocha": "^7.1.1",
+    "prettier": "^1.16.4"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-test --ignore-stderr --env=prod --workers=4",
+    "stop": "egg-scripts stop --title=egg-test",
+    "start-preview": "egg-scripts start --daemon --title=egg-test-preview --ignore-stderr --env=preview --workers=4",
+    "stop-preview": "egg-scripts stop --title=egg-test-preview",
+    "start-beta": "egg-scripts start --daemon --title=egg-test-beta --ignore-stderr --env=beta --workers=4",
+    "stop-beta": "egg-scripts stop --title=egg-test-beta",
+    "dev": "egg-bin dev",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod",
+    "lint-fix": "eslint . --fix",
+    "mocha": "./node_modules/mocha/bin/mocha"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
