@@ -19,6 +19,20 @@ type person struct {
 func Test(str string) {
 	//result := "ok"
 
+	// map
+	//var lines [][]byte
+	//var str1 string = "test"
+	//var data []byte = []byte(str1)
+	// fmt.Println("str1:", str1)
+	// fmt.Println("data:", data)
+
+	// var data2 [10]byte = [10]byte{3: 'x', 4: 'y'}
+	// data2[0] = 'T'
+	// data2[1] = 'E'
+	// var str2 string = string(data2[:4])
+	// fmt.Println("str2:", str2)
+	// fmt.Println("data2:", data2)
+
 	//utils
 	// str1 := utils.RandStr(31)
 	// fmt.Println("str:", str1)
@@ -27,11 +41,11 @@ func Test(str string) {
 	//t1 := time.NewTicker(1 * time.Second)
 
 	// struct
-	var p1 person
-	p1.name = "pprof.cn"
-	p1.city = "北京"
-	p1.age = 18
-	fmt.Printf("%v\n", p1)
+	// var p1 person
+	// p1.name = "pprof.cn"
+	// p1.city = "北京"
+	// p1.age = 18
+	// fmt.Printf("%v\n", p1)
 	// var p2 = new(person)
 	// fmt.Printf("%T\n", p2)
 	// fmt.Printf("p2=%#v\n", p2)

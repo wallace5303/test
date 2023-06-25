@@ -7,8 +7,8 @@ import (
 func main() {
 	env := "dev"
 	if env != "prod" {
-		//tmp.Test("aaaa")
-		go tmp.Routine()
+		tmp.Test("aaaa")
+		//go tmp.Routine()
 		return
 	}
 }
