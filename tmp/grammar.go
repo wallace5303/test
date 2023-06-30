@@ -16,10 +16,80 @@ type person struct {
 	age  int8
 }
 
+// Sayer 接口
+type Sayer interface {
+	say()
+	run()
+}
+
+type dog struct{}
+
+type cat struct{}
+
+// dog实现了Sayer接口
+func (d dog) say() {
+	fmt.Println("汪汪汪")
+}
+
+// cat实现了Sayer接口
+func (c cat) say() {
+	fmt.Println("喵喵喵")
+}
+
+func (c cat) run() {
+	fmt.Println("cat 跑了")
+}
+
 func Test(str string) {
 	//result := "ok"
 
+	// interface
+	// var x Sayer
+	// a := cat{}
+	// b := dog{}
+	// x = a
+	// x.say()
+	// x.run()
+	// a.run()
+	// x = b
+	// x.say()
+
 	// map
+	// var sliceMap = make(map[string][]string, 3)
+	// fmt.Println(sliceMap)
+	// fmt.Println("after init")
+	// key := "中国"
+	// value, ok := sliceMap[key]
+	// if !ok {
+	// 	value = make([]string, 0, 2)
+	// }
+	// value = append(value, "北京", "上海")
+	// sliceMap[key] = value
+	// fmt.Println(sliceMap)
+
+	// map
+	// var mapSlice = make([]map[string]string, 3)
+	// for index, value := range mapSlice {
+	// 	fmt.Printf("index:%d value:%v\n", index, value)
+	// }
+	// fmt.Println("after init")
+	// // 对切片中的map元素进行初始化
+	// mapSlice[0] = make(map[string]string, 10)
+	// mapSlice[0]["name"] = "王五"
+	// mapSlice[0]["password"] = "123456"
+	// mapSlice[0]["address"] = "红旗大街"
+	// for index, value := range mapSlice {
+	// 	fmt.Printf("index:%d value:%v\n", index, value)
+	// }
+
+	// map
+	// scoreMap := make(map[string]int, 2)
+	// scoreMap["张三"] = 90
+	// scoreMap["小明"] = 100
+	// scoreMap["李四"] = 80
+	// fmt.Println("scoreMap:", scoreMap)
+
+	// byte
 	//var lines [][]byte
 	//var str1 string = "test"
 	//var data []byte = []byte(str1)
