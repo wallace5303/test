@@ -16,6 +16,12 @@ type person struct {
 	age  int8
 }
 
+type People struct {
+	Name string
+	City string
+	Age  int8
+}
+
 // Sayer 接口
 type Sayer interface {
 	say()
@@ -40,10 +46,68 @@ func (c cat) run() {
 	fmt.Println("cat 跑了")
 }
 
+type User struct {
+	ID   string `json:"json_id" bson:"bson_id" custom:"my_id"`
+	Name string `json:"json_name" bson:"bson_name" custom:"my_name"`
+}
+
+type Product struct {
+	Name      string  `json:"name"`
+	ProductID int64   `json:"product_id,string"`
+	Number    int     `json:"number,string"`
+	Price     float64 `json:"price,string"`
+	IsOnSale  bool    `json:"is_on_sale,string"`
+	Test      string  `json:"-"`
+	OMTest    string  `json:"om_test,omitempty"`
+}
+
 func Test(str string) {
 	//result := "ok"
 
+	// json
+	// str1 := `{"name":"test","product_id":"1","number":"110011","price":"0.01","is_on_sale":"true"}`
+	// p := Product{}
+	// json.Unmarshal([]byte(str1), &p)
+	// fmt.Println(&p)
+	// fmt.Printf("type:%T value:%+v\n", p, p)
+
+	// json
+	// p := People{Name: "gsx", City: "shanghai", Age: 12}
+	// jsonU, _ := json.Marshal(p)
+	// fmt.Println(string(jsonU))
+	// u := &User{ID: "user001", Name: "tom"}
+	// t := reflect.TypeOf(u)
+	// // 获取第一个字段的Struct Tag的值
+	// f0 := t.Elem().Field(0)
+	// fmt.Println(f0.Tag.Get("json"))
+	// fmt.Println(f0.Tag.Get("bson"))
+	// fmt.Println(f0.Tag.Get("custom"))
+
 	// interface
+	// var w io.Writer
+	// w = os.Stdout
+	// w = new(bytes.Buffer)
+	// w = nil
+	// fmt.Println(w)
+
+	// 定义一个空接口x
+	// var x interface{}
+	// s := "pprof.cn"
+	// x = s
+	// fmt.Printf("type:%T value:%v\n", x, x)
+	// i := 100
+	// x = i
+	// fmt.Printf("type:%T value:%v\n", x, x)
+	// b := true
+	// x = b
+	// fmt.Printf("type:%T value:%v\n", x, x)
+	// 空接口作为map值
+	// var studentInfo = make(map[string]interface{})
+	// studentInfo["name"] = "李白"
+	// studentInfo["age"] = 18
+	// studentInfo["married"] = false
+	// fmt.Println(studentInfo)
+
 	// var x Sayer
 	// a := cat{}
 	// b := dog{}
@@ -92,9 +156,9 @@ func Test(str string) {
 	// byte
 	//var lines [][]byte
 	//var str1 string = "test"
-	//var data []byte = []byte(str1)
 	// fmt.Println("str1:", str1)
-	// fmt.Println("data:", data)
+	//var data []byte = []byte(str1)
+	//fmt.Println("data:", data)
 
 	// var data2 [10]byte = [10]byte{3: 'x', 4: 'y'}
 	// data2[0] = 'T'
