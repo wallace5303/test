@@ -3,6 +3,7 @@ package tmp
 import (
 	"fmt"
 	"os"
+	//jsonitor "github.com/json-iterator/go"
 )
 
 type Saiyan struct {
@@ -64,12 +65,49 @@ type Product struct {
 func Test(str string) {
 	//result := "ok"
 
+	// map
+	// data := make(map[string]*People)
+	// data["a"] = &People{
+	// 	Name: "gsx1",
+	// 	City: "sh",
+	// 	Age:  11,
+	// }
+	// data["b"] = &People{
+	// 	Name: "gsx2",
+	// 	City: "sh",
+	// 	Age:  12,
+	// }
+	// fmt.Println(data)
+	// fmt.Println(len(data))
+
 	// json
-	// str1 := `{"name":"test","product_id":"1","number":"110011","price":"0.01","is_on_sale":"true"}`
+	//str1 := `{"name":"test","product_id":"1","number":"110011","price":"0.01","is_on_sale":"true"}`
 	// p := Product{}
 	// json.Unmarshal([]byte(str1), &p)
 	// fmt.Println(&p)
 	// fmt.Printf("type:%T value:%+v\n", p, p)
+	//var p interface{}
+	//json.Unmarshal([]byte(str1), &p)
+	// 现在我们需要从这个interface{}解析出里面的数据
+	//m := p.(map[string]interface{})
+	// for k, v := range m {
+	// 	switch vv := v.(type) {
+	// 	case string:
+	// 	 fmt.Printf("%s is string, value: %s\n", k, vv)
+	// 	case int:
+	// 	 fmt.Printf("%s is int, value: %d\n", k, vv)
+	// 	case int64:
+	// 	 fmt.Printf("%s is int64, value: %d\n", k, vv)
+	// 	case bool:
+	// 	 fmt.Printf("%s is bool, vaule: %v", k, vv)
+	// 	default:
+	// 	 fmt.Printf("%s is unknow type\n", k)
+	// 	}
+	// }
+
+	// fmt.Println(m)
+	// fmt.Printf("%+v", m)
+	// fmt.Printf("%#v", m)
 
 	// json
 	// p := People{Name: "gsx", City: "shanghai", Age: 12}
@@ -155,10 +193,10 @@ func Test(str string) {
 
 	// byte
 	//var lines [][]byte
-	//var str1 string = "test"
+	// var str1 string = "test"
 	// fmt.Println("str1:", str1)
-	//var data []byte = []byte(str1)
-	//fmt.Println("data:", data)
+	// var data []byte = []byte(str1)
+	// fmt.Println("data:", data)
 
 	// var data2 [10]byte = [10]byte{3: 'x', 4: 'y'}
 	// data2[0] = 'T'
