@@ -62,8 +62,37 @@ type Product struct {
 	OMTest    string  `json:"om_test,omitempty"`
 }
 
+type b struct {
+	a string
+	c string
+	m int
+}
+
 func Test(str string) {
+
+	// env
+	//util.GetEnv()
+
+	pid := os.Getpid()
+	fmt.Printf("进程 PID: %d \n", pid)
+
 	//result := "ok"
+
+	// for
+	// i := 1
+	// for {
+	// 	i++
+	// 	fmt.Println(i)
+	// }
+	// for {
+	// 	bb := &b{
+	// 		a: "sdfasdf",
+	// 		c: "sdfasdflsdlf",
+	// 		m: pid,
+	// 	}
+	// 	fmt.Println(bb)
+	// 	time.Sleep(100 * time.Millisecond)
+	// }
 
 	// map
 	// data := make(map[string]*People)

@@ -5,11 +5,12 @@ import (
 )
 
 func main() {
+
 	env := "dev"
 	if env != "prod" {
 		tmp.Test("aaaa")
 		//pkg.Test("aaaa")
-		tmp.Routine8()
+		//tmp.Routine8()
 		return
 	}
 }
