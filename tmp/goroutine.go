@@ -1,6 +1,7 @@
 package tmp
 
 import (
+	"context"
 	"fmt"
 	"runtime"
 	"sync"
@@ -8,6 +9,83 @@ import (
 )
 
 var wg sync.WaitGroup
+
+func RoutineIndex() {
+	Routine10()
+}
+
+func Routine10() {
+	int_chan := make(chan int)
+	string_chan := make(chan string, 1)
+
+	go func() {
+		time.Sleep(3 * time.Second)
+		int_chan <- 3
+		fmt.Println("f1 done")
+	}()
+
+	go func() {
+		for {
+			time.Sleep(6 * time.Second)
+			string_chan <- "hello"
+			fmt.Println("f2 done")
+		}
+	}()
+
+	// 只会执行1次
+	select {
+	case v1 := <-int_chan:
+		fmt.Println("int:", v1)
+	case v2 := <-string_chan:
+		// 上面那个执行了，这个就不执行
+		fmt.Println("string:", v2)
+	}
+
+	for {
+		fmt.Println("current --- NumGoroutine:", runtime.NumGoroutine())
+		time.Sleep(1 * time.Second)
+	}
+
+	// for {
+	// 	select {
+	// 	case v1 := <-int_chan:
+	// 		fmt.Println("int:", v1)
+	// 	case v2 := <-string_chan:
+	// 		fmt.Println("string:", v2)
+	// 		// default:
+	// 		// 	fmt.Println("default")
+	// 	}
+	// 	fmt.Println("current --- NumGoroutine:", runtime.NumGoroutine())
+	// }
+}
+
+func Routine9() {
+	// 创建一个子节点的context,3秒后自动超时
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*3)
+
+	go watch(ctx, "监控1")
+	go watch(ctx, "监控2")
+
+	fmt.Println("现在开始等待8秒,time=", time.Now().Unix())
+	time.Sleep(8 * time.Second)
+
+	fmt.Println("等待8秒结束,准备调用cancel()函数，发现两个子协程已经结束了，time=", time.Now().Unix())
+	cancel()
+}
+
+// 单独的监控协程
+func watch(ctx context.Context, name string) {
+	for {
+		select {
+		case <-ctx.Done():
+			fmt.Println(name, "收到信号，监控退出,time=", time.Now().Unix())
+			return
+		default:
+			fmt.Println(name, "goroutine监控中,time=", time.Now().Unix())
+			time.Sleep(1 * time.Second)
+		}
+	}
+}
 
 func Time1() {
 	//1.timer基本使用
@@ -100,6 +178,9 @@ func Routine6() {
 	string_chan := make(chan string, 1)
 	go func() {
 		time.Sleep(2 * time.Second)
+		fmt.Println("NumGoroutine:", runtime.NumGoroutine())
+		time.Sleep(3 * time.Second)
+
 		int_chan <- 3
 		// time.Sleep(2 * time.Second)
 		// int_chan <- 4

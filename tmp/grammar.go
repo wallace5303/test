@@ -70,6 +70,26 @@ type b struct {
 
 func Test(str string) {
 
+	// reflect
+	// var x float32 = 3.14
+	// v := reflect.ValueOf(x)
+	// fmt.Println("type:", reflect.TypeOf(x))
+	// fmt.Println("vlaue:", v)
+	// fmt.Println("type:", v.Type())
+	// fmt.Println("Kind:", v.Kind())
+	// var x uint8 = 'x'
+	// fmt.Println("vlaue:", x)
+	// v := reflect.ValueOf(x)
+	// fmt.Println("type:", v.Type())
+	// fmt.Println("kind is uint8:", v.Kind() == reflect.Uint8)
+	// x = uint8(v.Uint())
+	// fmt.Println("x:", x)
+
+	// var aa float32 = 3.14
+	// v := reflect.ValueOf(aa)
+	// y := v.Interface().(float32)
+	// fmt.Println("y:", y)
+
 	// env
 	//util.GetEnv()
 
