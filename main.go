@@ -10,7 +10,8 @@ func main() {
 	if env != "prod" {
 		tmp.Test("aaaa")
 		//pkg.Test("aaaa")
-		tmp.RoutineIndex()
+		//tmp.RoutineIndex()
+		tmp.HttpTest()
 		return
 	}
 }
