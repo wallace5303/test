@@ -11,7 +11,7 @@ func main() {
 		tmp.Test("aaaa")
 		//pkg.Test("aaaa")
 		//tmp.RoutineIndex()
-		tmp.HttpTest()
+		//tmp.HttpTest()
 		return
 	}
 }

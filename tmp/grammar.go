@@ -3,6 +3,7 @@ package tmp
 import (
 	"fmt"
 	"os"
+	"time"
 	//jsonitor "github.com/json-iterator/go"
 )
 
@@ -69,6 +70,12 @@ type b struct {
 }
 
 func Test(str string) {
+	// time
+	start := time.Now()
+	changed := time.Time{}
+	fmt.Println("start:", start)
+	fmt.Println("changed:", changed)
+	fmt.Println("changed IsZero:", changed.IsZero())
 
 	// reflect
 	// var x float32 = 3.14
