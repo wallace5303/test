@@ -100,8 +100,8 @@ func Test(str string) {
 	// env
 	//util.GetEnv()
 
-	pid := os.Getpid()
-	fmt.Printf("进程 PID: %d \n", pid)
+	// pid := os.Getpid()
+	// fmt.Printf("进程 PID: %d \n", pid)
 
 	//result := "ok"
 
