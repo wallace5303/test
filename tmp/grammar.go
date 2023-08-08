@@ -3,8 +3,7 @@ package tmp
 import (
 	"fmt"
 	"os"
-	"time"
-	//jsonitor "github.com/json-iterator/go"
+	//jsoniter "github.com/json-iterator/go"
 )
 
 type Saiyan struct {
@@ -70,12 +69,15 @@ type b struct {
 }
 
 func Test(str string) {
+	// pid := os.Getpid()
+	// fmt.Printf("进程 PID: %d \n", pid)
+
 	// time
-	start := time.Now()
-	changed := time.Time{}
-	fmt.Println("start:", start)
-	fmt.Println("changed:", changed)
-	fmt.Println("changed IsZero:", changed.IsZero())
+	// start := time.Now()
+	// changed := time.Time{}
+	// fmt.Println("start:", start)
+	// fmt.Println("changed:", changed)
+	// fmt.Println("changed IsZero:", changed.IsZero())
 
 	// reflect
 	// var x float32 = 3.14
@@ -99,9 +101,6 @@ func Test(str string) {
 
 	// env
 	//util.GetEnv()
-
-	// pid := os.Getpid()
-	// fmt.Printf("进程 PID: %d \n", pid)
 
 	//result := "ok"
 
@@ -137,9 +136,32 @@ func Test(str string) {
 	// fmt.Println(len(data))
 
 	// json
-	//str1 := `{"name":"test","product_id":"1","number":"110011","price":"0.01","is_on_sale":"true"}`
+	// jsonFile, err := os.Open("user.json")
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+	// fmt.Println("successfully Opened users.json")
+	// defer jsonFile.Close()
+	// confPath := filepath.Join("./test/user.json")
+	// fmt.Println("confPath:", confPath)
+	//byteValue, _ := os.ReadFile("./test/user.json")
+
+	// fmt.Println(byteValue)
+	// fmt.Println(string(byteValue))
+
+	//var result map[string]interface{}
+	// var json = jsoniter.ConfigCompatibleWithStandardLibrary
+	// json.Unmarshal(byteValue, &result)
+	// fmt.Println(result)
+	// fmt.Println(result["users"])
+
+	// jsoniter.Unmarshal(byteValue, &result)
+	// fmt.Println(result)
+
+	// json
+	// str1 := `{"name":"test","product_id":"1","number":"110011","price":"0.01","is_on_sale":"true"}`
 	// p := Product{}
-	// json.Unmarshal([]byte(str1), &p)
+	// jsonitor.Unmarshal([]byte(str1), &p)
 	// fmt.Println(&p)
 	// fmt.Printf("type:%T value:%+v\n", p, p)
 	//var p interface{}
