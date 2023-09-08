@@ -69,8 +69,8 @@ type b struct {
 }
 
 func Test(str string) {
-	// pid := os.Getpid()
-	// fmt.Printf("进程 PID: %d \n", pid)
+	pid := os.Getpid()
+	fmt.Printf("进程 PID: %d \n", pid)
 
 	// time
 	// start := time.Now()

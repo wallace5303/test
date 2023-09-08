@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-
 	env := "dev"
 	if env != "prod" {
 		tmp.Test("aaaa")
