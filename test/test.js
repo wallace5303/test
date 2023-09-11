@@ -1,8 +1,14 @@
 'use strict';
 
-module.exports = function() {
+var str="Hello world!";
+//查找"Hello"
+var patt=/Hello/g;
+var result=patt.test(str);
+console.log('re:', result); 
+
+// module.exports = function() {
     
-}    
+// }    
 // exports.login = function(a, b) {
 //     return function (c, d, callback) {
 //         let c = a + b;
