@@ -64,13 +64,26 @@ type Product struct {
 
 type b struct {
 	a string
-	c string
+	c bool
 	m int
 }
 
 func Test(str string) {
 	pid := os.Getpid()
 	fmt.Printf("进程 PID: %d \n", pid)
+
+	bb := &b{
+		a: "gsx2",
+		c: true,
+		m: pid,
+	}
+	ff := b{
+		a: "gsx2",
+		c: false,
+		m: pid,
+	}
+	fmt.Printf("type:%T value:%+v\n", bb, bb)
+	fmt.Printf("type:%T value:%+v\n", ff, ff)
 
 	// time
 	// start := time.Now()
