@@ -1,16 +1,16 @@
 package main
 
 import (
-	"test/tmp"
+	_ "beego-demo/routers"
+
+	beego "github.com/beego/beego/v2/server/web"
 )
 
 func main() {
-	env := "dev"
-	if env != "prod" {
-		tmp.Test("aaaa")
-		//pkg.Test("aaaa")
-		//tmp.RoutineIndex()
-		//tmp.HttpTest()
-		return
-	}
+	// env := "dev"
+	// if env != "prod" {
+	// 	tmp.Test("aaaa")
+	// 	return
+	// }
+	beego.Run()
 }
