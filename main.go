@@ -1,7 +1,7 @@
 package main
 
 import (
-	_ "beego-demo/routers"
+	_ "test/routers"
 
 	beego "github.com/beego/beego/v2/server/web"
 )
