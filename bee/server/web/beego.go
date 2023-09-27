@@ -48,6 +48,7 @@ func AddAPPStartHook(hf ...hookfunc) {
 // beego.Run(":8089")
 // beego.Run("127.0.0.1:8089")
 func Run(params ...string) {
+	// fmt.Println("ddddd")
 	if len(params) > 0 && params[0] != "" {
 		BeeApp.Run(params[0])
 	} else {

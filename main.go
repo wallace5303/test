@@ -3,7 +3,7 @@ package main
 import (
 	_ "test/routers"
 
-	beego "github.com/beego/beego/v2/server/web"
+	beego "bee/server/web"
 )
 
 func main() {

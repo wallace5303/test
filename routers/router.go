@@ -3,7 +3,7 @@ package routers
 import (
 	"test/controllers"
 
-	beego "github.com/beego/beego/v2/server/web"
+	beego "bee/server/web"
 )
 
 func init() {
