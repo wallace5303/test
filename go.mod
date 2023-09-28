@@ -5,10 +5,12 @@ go 1.20
 require (
 	github.com/88250/gulu v1.2.2
 	github.com/beego/beego/v2 v2.1.2
+	beego v1.0.0
 	bee v1.0.0
 )
 
 replace bee => D:\www\bilibili\gofile\src\test\bee
+replace beego => D:\www\bilibili\gofile\src\test\beego
 
 require (
 	github.com/beorn7/perks v1.0.1 // indirect

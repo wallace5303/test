@@ -72,18 +72,20 @@ func Test(str string) {
 	pid := os.Getpid()
 	fmt.Printf("进程 PID: %d \n", pid)
 
-	bb := &b{
-		a: "gsx2",
-		c: true,
-		m: pid,
-	}
-	ff := b{
-		a: "gsx2",
-		c: false,
-		m: pid,
-	}
-	fmt.Printf("type:%T value:%+v\n", bb, bb)
-	fmt.Printf("type:%T value:%+v\n", ff, ff)
+	//canshu("aaa", 2, 4, 6)
+
+	// bb := &b{
+	// 	a: "gsx2",
+	// 	c: true,
+	// 	m: pid,
+	// }
+	// ff := b{
+	// 	a: "gsx2",
+	// 	c: false,
+	// 	m: pid,
+	// }
+	// fmt.Printf("type:%T value:%+v\n", bb, bb)
+	// fmt.Printf("type:%T value:%+v\n", ff, ff)
 
 	// time
 	// start := time.Now()
@@ -366,6 +368,20 @@ func Test(str string) {
 	// }
 
 	//return result
+}
+
+func canshu(str string, args ...int) {
+	fmt.Println(str)
+	fmt.Println(args)
+	//args2 := []int{1, 3, 5}
+	s1 := append(args, 8)
+	fmt.Println(s1)
+	canshu2("bbb", args...)
+}
+
+func canshu2(str string, args ...int) {
+	fmt.Println(str)
+	fmt.Println(args)
 }
 
 func StructDemo() string {

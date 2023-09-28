@@ -1,9 +1,8 @@
 package main
 
 import (
-	_ "test/routers"
-
 	beego "bee/server/web"
+	_ "test/routers"
 )
 
 func main() {
