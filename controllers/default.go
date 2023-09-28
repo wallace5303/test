@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	beego "bee/server/web"
+	beego "beego/server/web"
 )
 
 type MainController struct {
