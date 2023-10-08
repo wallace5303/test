@@ -1,0 +1,51 @@
+{
+  "-1": {"cfg_id": "-1", "type": 0, "value": 0, "resource_id": "MJS32", "order_id": 100, "audio": "", "desc": "背牌", "private_point": -1},
+
+  "11": {"cfg_id": "11", "type": 1, "value": 1, "resource_id": "MJS32", "order_id": 41, "audio": "hongzhong", "desc": "中", "private_point": 31, "private_point2": 32},
+  "12": {"cfg_id": "12", "type": 1, "value": 2, "resource_id": "MJS33", "order_id": 42, "audio": "facai", "desc": "发", "private_point": 32, "private_point2": 33},
+  "13": {"cfg_id": "13", "type": 1, "value": 3, "resource_id": "MJS34", "order_id": 43, "audio": "baiban", "desc": "白", "private_point": 33, "private_point2": 34},
+
+  "21": {"cfg_id": "21", "type": 2, "value": 1, "resource_id": "MJS28", "order_id": 31, "audio": "dongfeng", "desc": "东", "private_point": 27, "private_point2": 28},
+  "22": {"cfg_id": "22", "type": 2, "value": 2, "resource_id": "MJS30", "order_id": 32, "audio": "xifeng", "desc": "西", "private_point": 28, "private_point2": 29},
+  "23": {"cfg_id": "23", "type": 2, "value": 3, "resource_id": "MJS29", "order_id": 33, "audio": "nanfeng", "desc": "南", "private_point": 29, "private_point2": 30},
+  "24": {"cfg_id": "24", "type": 2, "value": 4, "resource_id": "MJS31", "order_id": 34, "audio": "beifeng", "desc": "北", "private_point": 30, "private_point2": 31},
+
+  "31": {"cfg_id": "31", "type": 3, "value": 1, "resource_id": "MJS01", "order_id": 21, "audio": "1wan", "desc": "一万", "private_point": 18, "private_point2": 1},
+  "32": {"cfg_id": "32", "type": 3, "value": 2, "resource_id": "MJS02", "order_id": 22, "audio": "2wan", "desc": "二万", "private_point": 19, "private_point2": 2},
+  "33": {"cfg_id": "33", "type": 3, "value": 3, "resource_id": "MJS03", "order_id": 23, "audio": "3wan", "desc": "三万", "private_point": 20, "private_point2": 3},
+  "34": {"cfg_id": "34", "type": 3, "value": 4, "resource_id": "MJS04", "order_id": 24, "audio": "4wan", "desc": "四万", "private_point": 21, "private_point2": 4},
+  "35": {"cfg_id": "35", "type": 3, "value": 5, "resource_id": "MJS05", "order_id": 25, "audio": "5wan", "desc": "五万", "private_point": 22, "private_point2": 5},
+  "36": {"cfg_id": "36", "type": 3, "value": 6, "resource_id": "MJS06", "order_id": 26, "audio": "6wan", "desc": "六万", "private_point": 23, "private_point2": 6},
+  "37": {"cfg_id": "37", "type": 3, "value": 7, "resource_id": "MJS07", "order_id": 27, "audio": "7wan", "desc": "七万", "private_point": 24, "private_point2": 7},
+  "38": {"cfg_id": "38", "type": 3, "value": 8, "resource_id": "MJS08", "order_id": 28, "audio": "8wan", "desc": "八万", "private_point": 25, "private_point2": 8},
+  "39": {"cfg_id": "39", "type": 3, "value": 9, "resource_id": "MJS09", "order_id": 29, "audio": "9wan", "desc": "九万", "private_point": 26, "private_point2": 9},
+
+  "41": {"cfg_id": "41", "type": 4, "value": 1, "resource_id": "MJS19", "order_id": 1, "audio": "1tiao", "desc": "一条", "private_point": 9, "private_point2": 19},
+  "42": {"cfg_id": "42", "type": 4, "value": 2, "resource_id": "MJS20", "order_id": 2, "audio": "2tiao", "desc": "二条", "private_point": 10, "private_point2": 10},
+  "43": {"cfg_id": "43", "type": 4, "value": 3, "resource_id": "MJS21", "order_id": 3, "audio": "3tiao", "desc": "三条", "private_point": 11, "private_point2": 21},
+  "44": {"cfg_id": "44", "type": 4, "value": 4, "resource_id": "MJS22", "order_id": 4, "audio": "4tiao", "desc": "四条", "private_point": 12, "private_point2": 22},
+  "45": {"cfg_id": "45", "type": 4, "value": 5, "resource_id": "MJS23", "order_id": 5, "audio": "5tiao", "desc": "五条", "private_point": 13, "private_point2": 23},
+  "46": {"cfg_id": "46", "type": 4, "value": 6, "resource_id": "MJS24", "order_id": 6, "audio": "6tiao", "desc": "六条", "private_point": 14, "private_point2": 24},
+  "47": {"cfg_id": "47", "type": 4, "value": 7, "resource_id": "MJS25", "order_id": 7, "audio": "7tiao", "desc": "七条", "private_point": 15, "private_point2": 25},
+  "48": {"cfg_id": "48", "type": 4, "value": 8, "resource_id": "MJS26", "order_id": 8, "audio": "8tiao", "desc": "八条", "private_point": 16, "private_point2": 26},
+  "49": {"cfg_id": "49", "type": 4, "value": 9, "resource_id": "MJS27", "order_id": 9, "audio": "9tiao", "desc": "九条", "private_point": 17, "private_point2": 27},
+
+  "51": {"cfg_id": "51", "type": 5, "value": 1, "resource_id": "MJS10", "order_id": 11, "audio": "1tong", "desc": "一饼", "private_point": 0, "private_point2": 10},
+  "52": {"cfg_id": "52", "type": 5, "value": 2, "resource_id": "MJS11", "order_id": 12, "audio": "2tong", "desc": "二饼", "private_point": 1, "private_point2": 11},
+  "53": {"cfg_id": "53", "type": 5, "value": 3, "resource_id": "MJS12", "order_id": 13, "audio": "3tong", "desc": "三饼", "private_point": 2, "private_point2": 12},
+  "54": {"cfg_id": "54", "type": 5, "value": 4, "resource_id": "MJS13", "order_id": 14, "audio": "4tong", "desc": "四饼", "private_point": 3, "private_point2": 13},
+  "55": {"cfg_id": "55", "type": 5, "value": 5, "resource_id": "MJS14", "order_id": 15, "audio": "5tong", "desc": "五饼", "private_point": 4, "private_point2": 14},
+  "56": {"cfg_id": "56", "type": 5, "value": 6, "resource_id": "MJS15", "order_id": 16, "audio": "6tong", "desc": "六饼", "private_point": 5, "private_point2": 15},
+  "57": {"cfg_id": "57", "type": 5, "value": 7, "resource_id": "MJS16", "order_id": 17, "audio": "7tong", "desc": "七饼", "private_point": 6, "private_point2": 16},
+  "58": {"cfg_id": "58", "type": 5, "value": 8, "resource_id": "MJS17", "order_id": 18, "audio": "8tong", "desc": "八饼", "private_point": 7, "private_point2": 17},
+  "59": {"cfg_id": "59", "type": 5, "value": 9, "resource_id": "MJS18", "order_id": 19, "audio": "9tong", "desc": "九饼", "private_point": 8, "private_point2": 18},
+
+  "61": {"cfg_id": "61", "type": 6, "value": 1, "resource_id": "MJS35", "order_id": 100, "audio": "", "desc": "春", "private_point": 36, "private_point2": 35},
+  "62": {"cfg_id": "62", "type": 6, "value": 2, "resource_id": "MJS36", "order_id": 100, "audio": "", "desc": "夏", "private_point": 37, "private_point2": 36},
+  "63": {"cfg_id": "63", "type": 6, "value": 3, "resource_id": "MJS37", "order_id": 100, "audio": "", "desc": "秋", "private_point": 38, "private_point2": 37},
+  "64": {"cfg_id": "64", "type": 6, "value": 4, "resource_id": "MJS38", "order_id": 100, "audio": "", "desc": "冬", "private_point": 39, "private_point2": 38},
+  "65": {"cfg_id": "65", "type": 6, "value": 5, "resource_id": "MJS39", "order_id": 100, "audio": "", "desc": "梅", "private_point": 40, "private_point2": 39},
+  "66": {"cfg_id": "66", "type": 6, "value": 6, "resource_id": "MJS40", "order_id": 100, "audio": "", "desc": "兰", "private_point": 41, "private_point2": 40},
+  "67": {"cfg_id": "67", "type": 6, "value": 7, "resource_id": "MJS42", "order_id": 100, "audio": "", "desc": "竹", "private_point": 42, "private_point2": 41},
+  "68": {"cfg_id": "68", "type": 6, "value": 8, "resource_id": "MJS41", "order_id": 100, "audio": "", "desc": "菊", "private_point": 43, "private_point2": 42}
+}

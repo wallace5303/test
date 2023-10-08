@@ -1,0 +1,266 @@
+{
+  "bounty": {
+    "1": {
+      "21": {"coin": 10000, "ticket": 500},
+      "22": {"coin": 0, "ticket": 5000},
+      "23": {"coin": 0, "ticket": 20000},
+      "24": {"coin": 0, "ticket": 50000}
+    },
+    "2": {
+      "21": {"coin": 5000, "ticket": 0},
+      "22": {"coin": 50000, "ticket": 0},
+      "23": {"coin": 25000, "ticket": 0},
+      "24": {"coin": 1000000, "ticket": 0}
+    },
+    "3": {
+      "21": {"coin": 3000, "ticket": 0},
+      "22": {"coin": 30000, "ticket": 0},
+      "23": {"coin": 150000, "ticket": 0},
+      "24": {"coin": 660000, "ticket": 0}
+    },
+    "4": {
+      "21": {"coin": 1000, "ticket": 0},
+      "22": {"coin": 20000, "ticket": 0},
+      "23": {"coin": 100000, "ticket": 0},
+      "24": {"coin": 500000, "ticket": 0}
+    },
+    "5": {
+      "21": {"coin": 200, "ticket": 0},
+      "22": {"coin": 6666, "ticket": 0},
+      "23": {"coin": 30000, "ticket": 0},
+      "24": {"coin": 150000, "ticket": 0}
+    },
+    "6": {
+      "21": {"coin": 200, "ticket": 0},
+      "22": {"coin": 6666, "ticket": 0},
+      "23": {"coin": 30000, "ticket": 0},
+      "24": {"coin": 150000, "ticket": 0}
+    },
+    "7": {
+      "21": {"coin": 200, "ticket": 0},
+      "22": {"coin": 6666, "ticket": 0},
+      "23": {"coin": 30000, "ticket": 0},
+      "24": {"coin": 150000, "ticket": 0}
+    },
+    "8": {
+      "21": {"coin": 200, "ticket": 0},
+      "22": {"coin": 6666, "ticket": 0},
+      "23": {"coin": 30000, "ticket": 0},
+      "24": {"coin": 150000, "ticket": 0}
+    },
+    "9": {
+      "21": {"coin": 100, "ticket": 0},
+      "22": {"coin": 2000, "ticket": 0},
+      "23": {"coin": 10000, "ticket": 0},
+      "24": {"coin": 50000, "ticket": 0}
+    },
+    "10": {
+      "21": {"coin": 100, "ticket": 0},
+      "22": {"coin": 2000, "ticket": 0},
+      "23": {"coin": 10000, "ticket": 0},
+      "24": {"coin": 50000, "ticket": 0}
+    },
+    "11": {
+      "21": {"coin": 100, "ticket": 0},
+      "22": {"coin": 2000, "ticket": 0},
+      "23": {"coin": 10000, "ticket": 0},
+      "24": {"coin": 50000, "ticket": 0}
+    },
+    "12": {
+      "21": {"coin": 100, "ticket": 0},
+      "22": {"coin": 2000, "ticket": 0},
+      "23": {"coin": 10000, "ticket": 0},
+      "24": {"coin": 50000, "ticket": 0}
+    }
+  },
+  "rank_rule": {
+    "1": {
+      "limit": {"out": 400, "promote":400, "probability": 100},
+      "list":     [
+        {
+          "score": {"min": null, "max": 0},
+          "rank_120": {"out" : {"min": 110, "max": 120}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 90, "max": 96}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 0, "max": 100},
+          "rank_120": {"out" : {"min": 100, "max": 109}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 80, "max": 89}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 100, "max": 200},
+          "rank_120": {"out" : {"min": 90, "max": 99}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 70, "max": 79}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 200, "max": 300},
+          "rank_120": {"out" : {"min": 80, "max": 89}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 60, "max": 69}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 300, "max": 400},
+          "rank_120": {"out" : {"min": 69, "max": 79}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 53, "max": 59}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 400, "max": 500},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 40, "max": 68}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 40, "max": 52}}
+        },
+        {
+          "score": {"min": 500, "max": 600},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 30, "max": 39}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 30, "max": 39}}
+        },
+        {
+          "score": {"min": 600, "max": 700},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 20, "max": 29}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 20, "max": 29}}
+        },
+        {
+          "score": {"min": 700, "max": 800},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 10, "max": 19}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 10, "max": 19}}
+        },
+        {
+          "score": {"min": 800, "max": null},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 9}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 9}}
+        }
+      ]
+    }, 
+    "2": {
+      "limit": {"out": 400, "promote":800, "probability": 90},
+      "list": [
+        {
+          "score": {"min": null, "max": 400},
+          "rank_120": {"out" : {"min": 61, "max": 68}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 45, "max": 52}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 400, "max": 500},
+          "rank_120": {"out" : {"min": 54, "max": 60}, "promote" : {"min": 28, "max": 32}},
+          "rank_96": {"out" : {"min": 36, "max": 44}, "promote" : {"min": 22, "max": 24}}
+        },
+        {
+          "score": {"min": 500, "max": 600},
+          "rank_120": {"out" : {"min": 47, "max": 53}, "promote" : {"min": 30, "max": 36}},
+          "rank_96": {"out" : {"min": 23, "max": 27}, "promote" : {"min": 20, "max": 21}}
+        },
+  
+        {
+          "score": {"min": 600, "max": 700},
+          "rank_120": {"out" : {"min": 40, "max": 46}, "promote" : {"min": 18, "max": 22}},
+          "rank_96": {"out" : {"min": 27, "max": 29}, "promote" : {"min": 18, "max": 19}}
+        },
+        {
+          "score": {"min": 700, "max": 800},
+          "rank_120": {"out" : {"min": 33, "max": 39}, "promote" : {"min": 13, "max": 17}},
+          "rank_96": {"out" : {"min": 25, "max": 26}, "promote" : {"min": 13, "max": 17}}
+        },
+        {
+          "score": {"min": 800, "max": 900},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 8, "max": 12}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 8, "max": 12}}
+        },
+        {
+          "score": {"min": 900, "max": null},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 7}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 7}}
+        }
+      ]
+    },
+    "3": {
+      "limit": {"out": 800, "promote":800, "probability": 70},
+      "list": [
+        {
+          "score": {"min": null, "max": 800},
+          "rank_120": {"out" : {"min": 28, "max": 32}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 20, "max": 24}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 800, "max": 900},
+          "rank_120": {"out" : {"min": 23, "max": 27}, "promote" : {"min": 12, "max": 9}},
+          "rank_96": {"out" : {"min": 16, "max": 19}, "promote" : {"min": 12, "max": 9}}
+        },
+        {
+          "score": {"min": 900, "max": 1000},
+          "rank_120": {"out" : {"min": 18, "max": 22}, "promote" : {"min": 5, "max": 8}},
+          "rank_96": {"out" : {"min": 14, "max": 16}, "promote" : {"min": 5, "max": 8}}
+        },
+        {
+          "score": {"min": 1100, "max": 1200},
+          "rank_120": {"out" : {"min": 13, "max": 17}, "promote" : {"min": 2, "max": 4}},
+          "rank_96": {"out" : {"min": 12, "max": 13}, "promote" : {"min": 2, "max": 4}}
+        },
+        {
+          "score": {"min": 1200, "max": null},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 1}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 1}}
+        }
+      ]
+    },
+    "4": {
+      "limit": {"out": 1000, "promote":1000, "probability": 50},
+      "list": [
+        {
+          "score": {"min": null, "max": 1000},
+          "rank_120": {"out" : {"min": 11, "max": 12}, "promote" : {"min": 0, "max": 0}},
+          "rank_96": {"out" : {"min": 11, "max": 12}, "promote" : {"min": 0, "max": 0}}
+        },
+        {
+          "score": {"min": 1000, "max": 1100},
+          "rank_120": {"out" : {"min": 9, "max": 10}, "promote" : {"min": 7, "max": 8}},
+          "rank_96": {"out" : {"min": 9, "max": 10}, "promote" : {"min": 7, "max": 8}}
+        },
+        {
+          "score": {"min": 1200, "max": 1300},
+          "rank_120": {"out" : {"min": 9, "max": 9}, "promote" : {"min": 5, "max": 6}},
+          "rank_96": {"out" : {"min": 9, "max": 9}, "promote" : {"min": 5, "max": 6}}
+        },
+        {
+          "score": {"min": 1300, "max": 1400},
+          "rank_120": {"out" : {"min": 8, "max": 8}, "promote" : {"min": 3, "max": 4}},
+          "rank_96": {"out" : {"min": 8, "max": 8}, "promote" : {"min": 3, "max": 4}}
+        },
+        {
+          "score": {"min": 1400, "max": null},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 2}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 2}}
+        }
+      ]
+    },
+    "5": {
+      "limit": {"out": null, "promote":0, "probability": 100},
+      "list": [
+        {
+          "score": {"min": null, "max": 1200},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 7, "max": 8}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 7, "max": 8}}
+        },
+        {
+          "score": {"min": 1200, "max": 1300},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 5, "max": 6}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 5, "max": 6}}
+        },
+        {
+          "score": {"min": 1300, "max": 1400},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 3, "max": 4}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 3, "max": 4}}
+        },
+        {
+          "score": {"min": 1400, "max": 1500},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 2, "max": 2}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 2, "max": 2}}
+        },
+        {
+          "score": {"min": 1500, "max": null},
+          "rank_120": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 1}},
+          "rank_96": {"out" : {"min": 0, "max": 0}, "promote" : {"min": 1, "max": 1}}
+        }
+      ]
+    }
+  }
+
+
+}
