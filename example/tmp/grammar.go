@@ -68,6 +68,14 @@ type b struct {
 	m int
 }
 
+func newPerson(name, city string, age int8) *person {
+	return &person{
+		name: name,
+		city: city,
+		age:  age,
+	}
+}
+
 func Test(str string) {
 	pid := os.Getpid()
 	fmt.Printf("进程 PID: %d \n", pid)
