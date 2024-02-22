@@ -80,6 +80,17 @@ func Test(str string) {
 	pid := os.Getpid()
 	fmt.Printf("进程 PID: %d \n", pid)
 
+	// Go语言中有个判断map中键是否存在的特殊写法，格式如下
+	// value, ok := map[key]
+	var lmap = make(map[string]func(ctx *person))
+	lmap["f1"] = func(pInfo *person) {
+		fmt.Printf("pInfo: %v \n", pInfo)
+	}
+	eventFn, err := lmap["f1"]
+	p1 := newPerson("gsx", "shanghai", 12)
+	fmt.Printf("err: %v \n", err)
+	eventFn(p1)
+
 	//canshu("aaa", 2, 4, 6)
 
 	// bb := &b{

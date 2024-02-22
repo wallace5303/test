@@ -1,16 +1,19 @@
 package main
 
 import (
-	beego "beego/server/web"
-	_ "test/routers"
+	// beego "beego/server/web"
+	// _ "test/routers"
+	"test/example/tmp"
 )
 
 func main() {
-	// env := "dev"
-	// if env != "prod" {
-	// 	tmp.Test("aaaa")
-	// 	return
-	// }
 
-	beego.Run("127.0.0.1:8090")
+	// beego.Run("127.0.0.1:8090")
+	env := "dev"
+	if env != "prod" {
+		tmp.Test("aaaa")
+		//tmp.Routine4()
+		return
+	}
+
 }
