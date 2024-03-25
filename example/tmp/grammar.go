@@ -89,17 +89,42 @@ func doWork() {
 	//fmt.Println("Recovered in 333333-")
 }
 
+func myFunction(a int, b string) {
+	// Function body
+}
+
 func Test(str string) {
 	pid := os.Getpid()
 	fmt.Printf("进程 PID: %d \n", pid)
+
+	// reflect
+	// 获取函数的反射类型对象
+	// fnType := reflect.TypeOf(myFunction)
+
+	// // 确保fnType确实是一个函数类型
+	// if fnType.Kind() == reflect.Func {
+	// 	// 获取函数的参数列表
+	// 	in := fnType.In(0) // 获取第一个参数的类型
+	// 	fmt.Printf("First argument type: %v\n", in)
+
+	// 	out := fnType.In(1) // 获取第二个参数的类型
+	// 	fmt.Printf("Second argument type: %v\n", out)
+
+	// 	// 获取所有参数的类型
+	// 	for i := 0; i < fnType.NumIn(); i++ {
+	// 		argType := fnType.In(i)
+	// 		fmt.Printf("Argument %d type: %v\n", i, argType)
+	// 	}
+	// } else {
+	// 	fmt.Println("myFunction is not a function type")
+	// }
 
 	// defer func() {
 	// 	if r := recover(); r != nil {
 	// 		fmt.Println("Recovered in main", r)
 	// 	}
 	// }()
-
-	doWork()
+	//doWork()
 
 	// fmt.Println("Recovered in ---------")
 

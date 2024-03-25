@@ -62,6 +62,7 @@ func Routine10() {
 func Routine9() {
 	// 创建一个子节点的context,3秒后自动超时
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*3)
+	defer cancel() // 确保在函数结束时取消Context
 
 	go watch(ctx, "监控1")
 	go watch(ctx, "监控2")
@@ -70,7 +71,6 @@ func Routine9() {
 	time.Sleep(8 * time.Second)
 
 	fmt.Println("等待8秒结束,准备调用cancel()函数，发现两个子协程已经结束了，time=", time.Now().Unix())
-	cancel()
 }
 
 // 单独的监控协程
@@ -146,7 +146,8 @@ func Routine7() {
 	ch2 := make(chan int)
 	// 开启goroutine将0~100的数发送到ch1中
 	go func() {
-		for i := 1; i < 100; i++ {
+		for i := 1; i < 10; i++ {
+			fmt.Println("goroutine1 i:", i)
 			ch1 <- i
 		}
 		close(ch1)
@@ -154,12 +155,12 @@ func Routine7() {
 	// 开启goroutine从ch1中接收值，并将该值的平方发送到ch2中
 	go func() {
 		for {
-			i, ok := <-ch1 // 通道关闭后再取值ok=false
-			fmt.Println("ch1 i:", i)
+			ret, ok := <-ch1 // 通道关闭后再取值ok=false
+			fmt.Println("goroutine2 ch1 :", ret)
 			if !ok {
 				break
 			}
-			ch2 <- i * i
+			ch2 <- ret * ret
 		}
 		//time.Sleep(10 * time.Second)
 		close(ch2)
@@ -167,8 +168,8 @@ func Routine7() {
 
 	// 在主goroutine中从ch2中接收值打印
 
-	for i := range ch2 {
-		fmt.Println(i)
+	for m := range ch2 {
+		fmt.Println(m)
 	}
 }
 
@@ -228,8 +229,9 @@ func Routine5() {
 }
 
 func recv(c chan int) {
-	ret := <-c
-	fmt.Println("接收成功", ret)
+	fmt.Println("-----")
+	ret, ok := <-c
+	fmt.Println("接收成功ret:", ret, " ok:", ok)
 	// <-c
 	// fmt.Println("接收成功")
 }
@@ -237,7 +239,10 @@ func recv(c chan int) {
 func Routine4() {
 	ch := make(chan int)
 	go recv(ch) // 启用goroutine从通道接收值
+
+	time.Sleep(5 * time.Second)
 	ch <- 10
+	time.Sleep(3 * time.Second)
 	fmt.Println("发送成功")
 }
 
